@@ -59,14 +59,26 @@ footer {
         'footer footer';
 }
 
-.nested2 {
-    grid-area: nested2;
+/*.rightArrow {
+    height: 40px;
+    width: 40px;
+    grid-area: right_arrow;
     display: grid;
-    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        'share share2'
+        'right_Arrow'
 
 }
+
+.leftArrow {
+    grid-area: left_arrow;
+    height: 40px;
+    width: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'left_Arrow'
+}*/
 
 .question {
     grid-area: question;
@@ -74,16 +86,6 @@ footer {
     font-weight: 300;
     text-align: center;
     margin-top: 10vh;
-}
-
-.share {
-    grid-area: share;
-    text-align: center;
-}
-
-.fa fa-share-alt {
-    grid-area: share2;
-
 }
 
 .button,
@@ -130,4 +132,28 @@ footer {
     background-color: var(--button-color);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+.right_arrow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.rightArrow {
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+}
+
+.left_arrow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.leftArrow {
+    width: 40px;
+    height: 40px;
 }
