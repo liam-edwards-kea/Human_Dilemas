@@ -59,27 +59,6 @@ footer {
         'footer footer';
 }
 
-/*.rightArrow {
-    height: 40px;
-    width: 40px;
-    grid-area: right_arrow;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        'right_Arrow'
-
-}
-
-.leftArrow {
-    grid-area: left_arrow;
-    height: 40px;
-    width: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        'left_Arrow'
-}*/
-
 .question {
     grid-area: question;
     font-family: var(--main-font);
@@ -92,12 +71,11 @@ footer {
 .button2,
 .button3,
 .button4 {
-    grid-area: button1;
     background-color: var(--button-color);
     font-family: var(--main-font);
     border: none;
     color: black;
-    padding: 15px 32px;
+    padding: 20px 37px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -105,8 +83,16 @@ footer {
     border-radius: 8px;
 }
 
+/* FIGURE OUT THE FLEX ON THE BUTTONS */
+
+.button {
+    grid-area: button1;
+     margin-top: 5rem;
+}
+
 .button2 {
     grid-area: button2;
+     margin-top: 5rem;
 }
 
 .button3 {
