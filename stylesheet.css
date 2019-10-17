@@ -36,6 +36,8 @@ footer {
     position: relative;
 }
 
+/* WRPPER GRIDS FOR BOTH PAGES */
+
 .wrapper {
     display: grid;
     grid-row-gap: 20px;
@@ -45,6 +47,13 @@ footer {
         'question question question'
         '. nested .'
         'footer footer footer';
+}
+
+.wrapper2 {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .nested {
@@ -87,12 +96,12 @@ footer {
 
 .button {
     grid-area: button1;
-     margin-top: 5rem;
+    margin-top: 5rem;
 }
 
 .button2 {
     grid-area: button2;
-     margin-top: 5rem;
+    margin-top: 5rem;
 }
 
 .button3 {
@@ -142,4 +151,10 @@ footer {
 .leftArrow {
     width: 40px;
     height: 40px;
+}
+
+.rightArrow:hover,
+.leftArrow:hover {
+    cursor: pointer;
+    transform: scale(1.15);
 }
