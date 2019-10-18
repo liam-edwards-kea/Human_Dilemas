@@ -98,13 +98,19 @@ footer {
     grid-area: share;
 }
 
+/* ALSO USING FLEX ON COMMENT BOX */
+
 .comment {
     grid-area: comment;
+    display: flex;
+    justify-content: center;
 }
+
+/* FOR PLAYERS COMMENTS
 
 .comment1 {
     grid-area: comment1;
-}
+} */
 
 /* ANIMATION FOR THE RESULTS GRAPH */
 
@@ -276,3 +282,36 @@ footer {
     cursor: pointer;
     transform: scale(1.15);
 }
+
+/* STYLING THE HR TAG AROUND 'SHARE DILEMA' */
+
+.line {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 65%;
+}
+
+.comments {
+    border-radius: 20px;
+    border: none;
+    width: 400px;
+    padding: 10px;
+    font-family: var(--main-font);
+    background-color: #DCDCDC;
+}
+
+/* USE JAVASCRIPT TO USE A KEYPRESS IN PLACE OF THE SUBMIT BUTTON */
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    font-family: var(--main-font);
+}
+
+/* SVG COMMENTED OUT FOR NOW
+
+.share_icon {
+    width: 20px;
+    height: 20px;
+} */
