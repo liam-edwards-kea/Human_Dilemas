@@ -57,6 +57,7 @@ footer {
     grid-column-gap: 20px;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
+        'question question question'
         '. results .'
         '. share .'
         '. comment .'
@@ -110,11 +111,11 @@ footer {
 .box1 {
     height: 40px;
     width: 5px;
-    margin-top: 5rem;
     background-color: var(--button-color);
     position: relative;
     animation-name: stretch;
     animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes stretch {
@@ -135,6 +136,7 @@ footer {
     position: relative;
     animation-name: stretch1;
     animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes stretch1 {
@@ -155,6 +157,7 @@ footer {
     position: relative;
     animation-name: stretch2;
     animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes stretch2 {
@@ -175,6 +178,7 @@ footer {
     position: relative;
     animation-name: stretch3;
     animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes stretch3 {
