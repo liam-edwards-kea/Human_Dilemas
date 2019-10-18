@@ -36,7 +36,7 @@ footer {
     position: relative;
 }
 
-/* WRPPER GRIDS FOR BOTH PAGES */
+/* WRAPPER GRID FOR QUESTION PAGE */
 
 .wrapper {
     display: grid;
@@ -49,12 +49,22 @@ footer {
         'footer footer footer';
 }
 
+/* WRAPPER GRID FOR ANSWER PAGE */
+
 .wrapper2 {
     display: grid;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        '. results .'
+        '. share .'
+        '. comment .'
+        '. comment1 .'
+        'footer footer footer'
 }
+
+/* NESTED GRIDS FOR THE BUTTONS SECTION */
 
 .nested {
     grid-area: nested;
@@ -76,6 +86,110 @@ footer {
     margin-top: 10vh;
 }
 
+/* DEFINING ANSWER PAGE GRID AREAS */
+
+.results {
+    grid-area: results;
+    margin-left: 10rem;
+}
+
+.share {
+    grid-area: share;
+}
+
+.comment {
+    grid-area: comment;
+}
+
+.comment1 {
+    grid-area: comment1;
+}
+
+/* ANIMATION FOR THE RESULTS GRAPH */
+
+.box1 {
+    height: 40px;
+    width: 5px;
+    margin-top: 5rem;
+    background-color: var(--button-color);
+    position: relative;
+    animation-name: stretch;
+    animation-duration: 4s;
+}
+
+@keyframes stretch {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 350px;
+    }
+}
+
+.box2 {
+    height: 40px;
+    width: 5px;
+    margin-top: 1rem;
+    background-color: var(--button-color);
+    position: relative;
+    animation-name: stretch1;
+    animation-duration: 4s;
+}
+
+@keyframes stretch1 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+.box3 {
+    height: 40px;
+    width: 5px;
+    margin-top: 1rem;
+    background-color: var(--button-color);
+    position: relative;
+    animation-name: stretch2;
+    animation-duration: 4s;
+}
+
+@keyframes stretch2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 270px;
+    }
+}
+
+.box4 {
+    height: 40px;
+    width: 5px;
+    margin-top: 1rem;
+    background-color: var(--button-color);
+    position: relative;
+    animation-name: stretch3;
+    animation-duration: 4s;
+}
+
+@keyframes stretch3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100px;
+    }
+}
+
+
+/* STYLING ON THE QUESTION BUTTONS */
+
 .button,
 .button2,
 .button3,
@@ -91,8 +205,6 @@ footer {
     font-size: 20px;
     border-radius: 8px;
 }
-
-/* FIGURE OUT THE FLEX ON THE BUTTONS */
 
 .button {
     grid-area: button1;
@@ -128,6 +240,8 @@ footer {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+/* USING FLEX ON THE SIDE ARROWS AND STYLING */
 
 .right_arrow {
     display: flex;
