@@ -1,8 +1,10 @@
+*{
+        box-sizing: border-box;
+}
 :root {
     --background-color: darkgrey;
     --button-color: darkslategrey;
     --main-font: 'helvetica';
-
 }
 
 body {
@@ -41,9 +43,11 @@ footer {
 /* WRAPPER GRID FOR QUESTION PAGE */
 
 .wrapper {
+    margin: auto;
+    max-width: 1400px;
     display: grid;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
         'question question question'
@@ -54,9 +58,12 @@ footer {
 /* WRAPPER GRID FOR ANSWER PAGE */
 
 .wrapper2 {
+    margin: auto;
+    max-width: 1400px;
+    width: 100%;
     display: grid;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
         'question question question'
@@ -70,10 +77,11 @@ footer {
 /* NESTED GRIDS FOR THE BUTTONS SECTION */
 
 .nested {
+    width: 100%;
     grid-area: nested;
     display: grid;
-    grid-row-gap: 90px;
-    grid-column-gap: 60px;
+    grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         'button1 button2'
@@ -93,7 +101,8 @@ footer {
 
 .results {
     grid-area: results;
-    margin-left: 10rem;
+    justify-self: center;
+    width: 100%;
 }
 
 .share {
@@ -104,8 +113,6 @@ footer {
 
 .comment {
     grid-area: comment;
-    display: flex;
-    justify-content: center;
 }
 
 /* FOR PLAYERS COMMENTS
@@ -132,7 +139,7 @@ footer {
     }
 
     to {
-        width: 350px;
+        width: 100%;
     }
 }
 
@@ -153,7 +160,7 @@ footer {
     }
 
     to {
-        width: 200px;
+        width: 60%;
     }
 }
 
@@ -174,7 +181,7 @@ footer {
     }
 
     to {
-        width: 270px;
+        width: 65%;
     }
 }
 
@@ -195,26 +202,24 @@ footer {
     }
 
     to {
-        width: 100px;
+        width: 12%;
     }
 }
 
 
 /* STYLING ON THE QUESTION BUTTONS */
 
-.button,
-.button2,
-.button3,
-.button4 {
+.buttons {
     background-color: var(--button-color);
     font-family: var(--main-font);
     border: none;
     color: black;
-    padding: 20px 37px;
+    padding: 1rem;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1rem;
     border-radius: 8px;
 }
 
@@ -235,19 +240,22 @@ footer {
 .button4 {
     grid-area: button4;
 }
+@media only screen and (max-width:900px){
+    .wrapper2, .wrapper{
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    .nested{
+        grid-row-gap: 1rem;
+    grid-column-gap: .5rem;
+    }
+}
 
-.button:hover,
-.button2:hover,
-.button3:hover,
-.button4:hover {
+.buttons:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
 
-.button:active,
-.button2:active,
-.button3:active,
-.button4:active {
+.buttons:active {
     background-color: var(--button-color);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -293,10 +301,14 @@ footer {
     width: 65%;
 }
 
+.commentform {
+    width: 1000%;
+}
+
 .comments {
     border-radius: 20px;
     border: none;
-    width: 400px;
+    width: 100%;
     padding: 10px;
     font-family: var(--main-font);
     background-color: #DCDCDC;
