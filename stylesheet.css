@@ -2,15 +2,26 @@
         box-sizing: border-box;
 }
 :root {
+    /*LIAMS COLOURS*/
     --background-color: darkgrey;
     --button-color: darkslategrey;
+    --answer-bars: darkslategrey;
+    /*CHIRS' COLORS*/
+    --background-color: #F6F1E8;
+    --button-color: #DCD4C8;
+    --answer-bars: #C2B9AE;
+
     --main-font: 'helvetica';
 }
 
 body {
     background-color: var(--background-color);
+    height: 100vh;
+    overflow: hidden;
 }
-
+.indexwrap {
+    height: 100%;
+}
 header {
     font-family: var(--main-font);
     font-size: 2rem;
@@ -22,6 +33,7 @@ header {
 h1 {
     text-align: center;
     margin-top: 10vh;
+    height: 0%;
 }
 
 h2 {
@@ -43,6 +55,7 @@ footer {
 /* WRAPPER GRID FOR QUESTION PAGE */
 
 .wrapper {
+    height: 100%;
     margin: auto;
     max-width: 1400px;
     display: grid;
@@ -58,6 +71,7 @@ footer {
 /* WRAPPER GRID FOR ANSWER PAGE */
 
 .wrapper2 {
+    height: 100%;
     margin: auto;
     max-width: 1400px;
     width: 100%;
@@ -126,7 +140,7 @@ footer {
 .box1 {
     height: 40px;
     width: 5px;
-    background-color: var(--button-color);
+    background-color: var(--answer-bars);
     position: relative;
     animation-name: stretch;
     animation-duration: 4s;
@@ -147,7 +161,7 @@ footer {
     height: 40px;
     width: 5px;
     margin-top: 1rem;
-    background-color: var(--button-color);
+    background-color: var(--answer-bars);
     position: relative;
     animation-name: stretch1;
     animation-duration: 4s;
@@ -168,7 +182,7 @@ footer {
     height: 40px;
     width: 5px;
     margin-top: 1rem;
-    background-color: var(--button-color);
+    background-color: var(--answer-bars);
     position: relative;
     animation-name: stretch2;
     animation-duration: 4s;
@@ -189,7 +203,7 @@ footer {
     height: 40px;
     width: 5px;
     margin-top: 1rem;
-    background-color: var(--button-color);
+    background-color: var(--answer-bars);
     position: relative;
     animation-name: stretch3;
     animation-duration: 4s;
