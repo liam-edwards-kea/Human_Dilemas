@@ -48,9 +48,7 @@ const page21 = '<header>Chapter 1. Think</header><div class="wrapper"><h1 class=
 
 const page22 = ''
 
-const page23 = ''
-
-
+const page23 = '  <header>Chapter 1. Think</header><main><h1>Amazeballs!</h1><br><h2>You completed the first chapter!</h2></main><footer>Made by Humans</footer><script src="JScript.js"></script>'
 
 // ANIMATION OF INDEX PAGE AS WELL AS AUTOMATIC LOAD OF PAGE 1
 function fadeIn() {
@@ -108,14 +106,14 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage7() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage7() {
+    title.textContent = "Human Dilemmas Page 7"
+    body.innerHTML = page7;
+    rightArrow = document.querySelector(".rightArrow");
+    rightArrow.addEventListener("click", loadpage9)
+    leftArrow = document.querySelector(".leftArrow")
+    leftArrow.addEventListener("click", loadpage5)
+}
 //function loadpage8() {
 //    title.textContent = "Human Dilemmas Page 2"
 //    body.innerHTML = page2;
@@ -124,14 +122,14 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage9() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage9() {
+    title.textContent = "Human Dilemmas Page 9"
+    body.innerHTML = page9;
+    rightArrow = document.querySelector(".rightArrow");
+    rightArrow.addEventListener("click", loadpage11)
+    leftArrow = document.querySelector(".leftArrow")
+    leftArrow.addEventListener("click", loadpage7)
+}
 //function loadpage10() {
 //    title.textContent = "Human Dilemmas Page 2"
 //    body.innerHTML = page2;
@@ -140,14 +138,14 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage11() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage11() {
+    title.textContent = "Human Dilemmas Page 11"
+    body.innerHTML = page11;
+    rightArrow = document.querySelector(".rightArrow");
+    rightArrow.addEventListener("click", loadpage13)
+    leftArrow = document.querySelector(".leftArrow")
+    leftArrow.addEventListener("click", loadpage9)
+}
 //function loadpage12() {
 //    title.textContent = "Human Dilemmas Page 2"
 //    body.innerHTML = page2;
@@ -156,14 +154,14 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage13() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage13() {
+    title.textContent = "Human Dilemmas Page 13"
+    body.innerHTML = page13;
+    rightArrow = document.querySelector(".rightArrow");
+    rightArrow.addEventListener("click", loadpage15)
+    leftArrow = document.querySelector(".leftArrow")
+    leftArrow.addEventListener("click", loadpage11)
+}
 //function loadpage14() {
 //    title.textContent = "Human Dilemmas Page 2"
 //    body.innerHTML = page2;
@@ -172,14 +170,14 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage15() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage15() {
+    title.textContent = "Human Dilemmas Page 15"
+    body.innerHTML = page15;
+    rightArrow = document.querySelector(".rightArrow");
+    rightArrow.addEventListener("click", loadpage17)
+    leftArrow = document.querySelector(".leftArrow")
+    leftArrow.addEventListener("click", loadpage13)
+}
 //function loadpage16() {
 //    title.textContent = "Human Dilemmas Page 2"
 //    body.innerHTML = page2;
@@ -188,14 +186,14 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage17() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage17() {
+    title.textContent = "Human Dilemmas Page 17"
+    body.innerHTML = page17;
+    rightArrow = document.querySelector(".rightArrow");
+    rightArrow.addEventListener("click", loadpage19)
+    leftArrow = document.querySelector(".leftArrow")
+    leftArrow.addEventListener("click", loadpage15)
+}
 //function loadpage18() {
 //    title.textContent = "Human Dilemmas Page 2"
 //    body.innerHTML = page2;
@@ -204,14 +202,14 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage19() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage19() {
+    title.textContent = "Human Dilemmas Page 19"
+    body.innerHTML = page19;
+    rightArrow = document.querySelector(".rightArrow");
+    rightArrow.addEventListener("click", loadpage21)
+    leftArrow = document.querySelector(".leftArrow")
+    leftArrow.addEventListener("click", loadpage17)
+}
 //function loadpage20() {
 //    title.textContent = "Human Dilemmas Page 2"
 //    body.innerHTML = page2;
@@ -220,14 +218,14 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage21() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage21() {
+    title.textContent = "Human Dilemmas Page 21"
+    body.innerHTML = page21;
+    rightArrow = document.querySelector(".rightArrow");
+    rightArrow.addEventListener("click", loadpage23)
+    leftArrow = document.querySelector(".leftArrow")
+    leftArrow.addEventListener("click", loadpage19)
+}
 //function loadpage22() {
 //    title.textContent = "Human Dilemmas Page 2"
 //    body.innerHTML = page2;
@@ -236,13 +234,9 @@ function loadpage5() {
 //    leftArrow = document.querySelector(".leftArrow")
 //    leftArrow.addEventListener("click", loadpage1)
 //}
-//function loadpage23() {
-//    title.textContent = "Human Dilemmas Page 2"
-//    body.innerHTML = page2;
-//    rightArrow = document.querySelector(".rightArrow");
-//    rightArrow.addEventListener("click", loadpage3)
-//    leftArrow = document.querySelector(".leftArrow")
-//    leftArrow.addEventListener("click", loadpage1)
-//}
+function loadpage23() {
+    title.textContent = "Human Dilemmas Page 23"
+    body.innerHTML = page23;
+}
 
 
