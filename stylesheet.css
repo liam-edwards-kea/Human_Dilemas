@@ -329,3 +329,18 @@ footer {
     width: 20px;
     height: 20px;
 } */
+
+/* ADDING FADE EFFECT ON INDEX */
+.fadein{
+    opacity: 0;
+    animation: fadein 4s forwards;
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
