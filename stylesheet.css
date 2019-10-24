@@ -58,7 +58,7 @@ footer {
 
 .question-wrapper {
     padding-top: 1rem;
-    min-height: 80%;
+    height: 80%;
     margin: auto;
     max-width: 1400px;
     display: grid;
@@ -74,7 +74,8 @@ footer {
 /* WRAPPER GRID FOR ANSWER PAGE */
 
 .answer-wrapper {
-    height: 100%;
+    padding-top: 1rem;
+    height: 80%;
     margin: auto;
     max-width: 1400px;
     width: 100%;
@@ -82,13 +83,10 @@ footer {
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: [first-line] 25% [line2] 75% [last-line];
     grid-template-areas:
         'question question question'
         '. results .'
-        '. share .'
-        '. comment .'
-        '. comment1 .'
-        'footer footer footer'
 }
 
 /* NESTED GRIDS FOR THE BUTTONS SECTION */
@@ -120,14 +118,13 @@ footer {
     width: 100%;
 }
 
-.share {
-    grid-area: share;
-}
+.comment-share {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
 
-/* ALSO USING FLEX ON COMMENT BOX */
-
-.comment {
-    grid-area: comment;
 }
 
 /* FOR PLAYERS COMMENTS
@@ -161,7 +158,6 @@ footer {
 .box2 {
     height: 40px;
     width: 5px;
-    margin-top: 1rem;
     background-color: var(--answer-bars);
     position: relative;
     animation-name: stretch1;
@@ -182,7 +178,6 @@ footer {
 .box3 {
     height: 40px;
     width: 5px;
-    margin-top: 1rem;
     background-color: var(--answer-bars);
     position: relative;
     animation-name: stretch2;
@@ -203,7 +198,6 @@ footer {
 .box4 {
     height: 40px;
     width: 5px;
-    margin-top: 1rem;
     background-color: var(--answer-bars);
     position: relative;
     animation-name: stretch3;
@@ -225,6 +219,7 @@ footer {
 
 .results p {
     padding-left: .5rem;
+    margin-bottom: .2rem;
 }
 
 /* STYLING ON THE QUESTION BUTTONS */
@@ -319,8 +314,12 @@ footer {
     width: 65%;
 }
 
+.comment {
+    margin-top: 2rem;
+}
+
 .commentform {
-    width: 1000%;
+    width: 100%;
 }
 
 .comments {
