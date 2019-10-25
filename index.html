@@ -10,14 +10,109 @@
 
 <body>
     <header>Chapter 1. Think</header>
-    <div class="indexwrap">
-        <main>
+
+   <div id="content">
+         <main class="indexwrap">
             <h1><q>Computers are useless.<br> They can only give you answers.</q></h1><br>
             <h2><i>- Pablo Picasso</i></h2>
         </main>
+    </div>
 
     <footer>Made by Humans</footer>
-</div>
+    <template id="question-template">
+        <main class="question-wrapper">
+            <h1 class="question">
+                You are forced to cut off one of these two limbs to survive.<br>Which do you choose to cut off first?
+            </h1>
+            <div class="left_arrow">
+                <svg class="leftArrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve">
+                    <g>
+                        <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+		c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+		c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z" />
+                    </g>
+                </svg>
+            </div>
+            <div class="right_arrow">
+
+                <svg class="rightArrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.846px" height="451.847px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                    <g>
+                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z" />
+                    </g>
+                </svg>
+            </div>
+            <article class="nested">
+                <button class="buttons button">A leg</button>
+                <button class="buttons button2">An arm</button>
+                <button class="buttons button3">Don't know</button>
+                <button class="buttons button4">Leave blank</button>
+            </article>
+        </main>
+    </template>
+    <template id="answer-template">
+        <main class="answer-wrapper">
+        <h2 class="question">You are forced to cut off one of these two limbs to survive.<br>Which do you choose to cut off first?</h2>
+        <div class="left_arrow">
+            <svg class="leftArrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve">
+                <g>
+                    <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+		c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+		c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z" />
+                </g>
+            </svg>
+        </div>
+        <div class="right_arrow">
+
+            <svg class="rightArrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.846px" height="451.847px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                <g>
+                    <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z" />
+                </g>
+            </svg>
+        </div>
+        <div class="results">
+            <p class="answer1">A leg</p>
+            <div class="box1"></div>
+            <p class="answer2">An arm</p>
+            <div class="box2"></div>
+            <p class="answer3">Don't know</p>
+            <div class="box3"></div>
+            <p class="answer4">Leave blank</p>
+            <div class="box4"></div>
+        </div>
+    </main>
+    <div class="comment-share">
+        <div class="share">
+            <hr class="line">
+            <h2>Share Dilemma</h2>
+            <!-- <div class="share_icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+                    <g>
+                        <path d="M352,256c-23.983,0-45.13,11.569-58.801,29.201l-144.438-55.553c0.146-1.897,0.572-3.714,0.572-5.647
+			c0-3.589-0.568-7.025-1.06-10.479l148.009-68.32c13.693,15.487,33.473,25.466,55.717,25.466c41.167,0,74.667-33.5,74.667-74.667
+			c0-41.167-33.5-74.667-74.667-74.667S277.333,54.833,277.333,96c0,3.589,0.568,7.025,1.06,10.479l-148.009,68.32
+			c-13.693-15.487-33.473-25.466-55.717-25.466C33.5,149.333,0,182.833,0,224c0,41.167,33.5,74.667,74.667,74.667
+			c23.983,0,45.13-11.569,58.801-29.201l144.438,55.553c-0.146,1.897-0.572,3.714-0.572,5.647c0,41.167,33.5,74.667,74.667,74.667
+			s74.667-33.5,74.667-74.667C426.667,289.5,393.167,256,352,256z" />
+                    </g>
+                </svg>
+            </div> -->
+            <hr class="line">
+        </div>
+        <div class="comment">
+            <form claas="commentform" action="/html/tags/html_form_tag_action.cfm" method="post">
+                <div>
+                    <textarea class="comments">Write a comment.
+                    </textarea>
+                </div>
+                <div class="submit"><input type="submit" value="Submit"></div>
+            </form>
+        </div>
+        <div class="comment1"></div>
+    </div>
+    </template>
     <script src="master.js"></script>
 </body>
 
