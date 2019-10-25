@@ -135,16 +135,19 @@ footer {
 
 /* ANIMATION FOR THE RESULTS GRAPH */
 
-.box1 {
+.boxes {
     height: 40px;
     width: 5px;
     background-color: var(--answer-bars);
     position: relative;
-    animation-name: stretch;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    overflow: hidden;
 }
 
+.box1 {
+        animation-name: stretch;
+}
 @keyframes stretch {
     from {
         width: 0;
@@ -156,13 +159,7 @@ footer {
 }
 
 .box2 {
-    height: 40px;
-    width: 5px;
-    background-color: var(--answer-bars);
-    position: relative;
     animation-name: stretch1;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes stretch1 {
@@ -176,13 +173,7 @@ footer {
 }
 
 .box3 {
-    height: 40px;
-    width: 5px;
-    background-color: var(--answer-bars);
-    position: relative;
     animation-name: stretch2;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes stretch2 {
@@ -196,13 +187,7 @@ footer {
 }
 
 .box4 {
-    height: 40px;
-    width: 5px;
-    background-color: var(--answer-bars);
-    position: relative;
     animation-name: stretch3;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes stretch3 {
@@ -213,6 +198,16 @@ footer {
     to {
         width: 12%;
     }
+}
+
+/* PERCENTAGE INSIDE OF ANSWER BOXES */
+
+.percentage {
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 5px;
+    text-align: end;
+
 }
 
 /*TEXT ABOVE ANSWER BOXES*/
