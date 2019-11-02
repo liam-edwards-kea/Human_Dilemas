@@ -1,6 +1,51 @@
-window.onload = test()
+//LOAD JSON DATA
 
-function test() {
+window.onload = openBook();
+
+function openBook(){
+    startTransition();
+}
+
+function startTransition(){
+    document.querySelector(".chapter-index").classList.add("start-transition");
+    setTimeout(getData, 3000);
+}
+
+
+function getData() {
+    fetch("http://humandilemmas.com/wpfolder/wp-json/wp/v2/question?per_page=11")
+        .then(response => response.json())
+        .then(showPosts);
+}
+
+function showPosts(posts) {
+    createQuestion(posts)
+}
+
+// CREATE QUESTION
+  //QUESTION COUNTER
+questionCounter = 10
+function createQuestion(posts) {
+    main = document.querySelector(".dataMain")
+    questionTemplate = document.querySelector("#question-template").content;
+    questionCopy = questionTemplate.cloneNode(true);
+
+    console.log(questionCopy);
+    console.log(posts);
+
+    questionCopy.querySelector(".dataQuestion").textContent = posts[questionCounter].question_text;
+    questionCopy.querySelector(".dataAnswerOne").textContent = posts[questionCounter].first_answer;
+    questionCopy.querySelector(".dataAnswerTwo").textContent = posts[questionCounter].second_answer;
+
+    questionCounter --;
+    main.classList.add("question-wrapper")
+    main.classList.remove("chapter-index")
+    main.textContent = ""
+    main.appendChild(questionCopy);
+}
+
+//ANSWER PAGE JS
+function showResults() {
     const box1 = document.getElementById("box1");
     const perBox1 = document.querySelector(".answerbox1")
     const box2 = document.getElementById("box2");
