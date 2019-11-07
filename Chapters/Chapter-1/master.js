@@ -12,7 +12,7 @@ function startTransition() {
 
 
 function getData() {
-    fetch("http://humandilemmas.com/wpfolder/wp-json/wp/v2/question?per_page=11")
+    fetch("https://humandilemmas.com/wpfolder/wp-json/wp/v2/question?per_page=11")
         .then(response => response.json())
         .then(showPosts);
 }
